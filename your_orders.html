@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" defer src="assets/js/your_orders.js"></script>
+    <title>Your Orders</title>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="text-gray-600 body-font bg-blue-500">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-between">
+            <a class="flex title-font font-medium items-center text-gray-900">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" 
+                stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" 
+                viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl text-white">Dorm Dash</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="index.html" class="mr-5 text-white">Home</a>
+                <a href="make_order.html" class="mr-5 text-white">Make Order</a>
+                <a href="available_requests.html" class="mr-5 text-white">Available Requests</a>
+                <a href="your_orders.html" class="mr-5 text-white font-bold">Your Orders</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mx-auto mt-8">
+        <h1 class="text-2xl font-bold text-center">Your Orders</h1>
+        <div id="userOrders" class="mt-4 space-y-4 p-4">
+            <!-- Orders will be dynamically inserted here -->
+        </div>
+    </div>
+
+</body>
+</html>

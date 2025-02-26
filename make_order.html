@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Request</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="assets/js/request.js"></script>
+</head>
+
+<body class="bg-gray-100">
+      <!-- Header Section -->
+    <header class="text-gray-600 body-font bg-blue-500">
+        <div class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
+            <nav class="flex items-center text-base space-x-5">
+                <a href="index.html" class="hover:text-gray-900 text-white">Home</a>
+                <a href="available_requests.html"  class="hover:text-gray-900 text-white">Available Requests</a>
+                <a href="make_order.html"  class="hover:text-gray-900 text-white">Make a Request</a>
+            </nav>
+            <a class="absolute left-1/2 transform -translate-x-1/2 flex items-center text-white title-font font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">Dorm Dash</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="container mx-auto px-5 py-10">
+        <h1 class="text-2xl font-semibold text-gray-800 mb-6">Create a New Request</h1>
+        <form id="orderForm" class="bg-white shadow-md rounded-lg p-5">
+            <label class="block mb-2">Title:</label>
+            <input type="text" id="title" class="w-full px-3 py-2 border rounded mb-4" required>
+
+            <label class="block mb-2">Description:
+                Add your mobile number and the details of the request you would like to make:
+            </label>
+            <textarea id="description" class="w-full px-3 py-2 border rounded mb-4" required></textarea>
+
+            <label class="block mb-2">Reward (₹):</label>
+            <input type="number" id="reward" class="w-full px-3 py-2 border rounded mb-4" required>
+
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                Submit Request
+            </button>
+        </form>
+    </section>
+
+    <footer class="text-gray-600 body-font text-center py-4">
+        <p class="text-sm text-gray-500">© 2024 Dorm Dash. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
