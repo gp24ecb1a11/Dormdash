@@ -42,7 +42,7 @@ onAuthStateChanged(auth, async (user) => {
                 <p><strong>Reward:</strong> ${order.reward}</p>
                 ${order.acceptedBy 
                     ? `<p><strong>Accepted By:</strong> ${order.acceptedBy} (${order.acceptedEmail})</p>
-                       <p><strong>Acceptor's Phone:</strong> ${order.acceptedByPhone || "Not available"}</p>` 
+                       ` 
                     : "<p><strong>Status:</strong> Not accepted yet</p>"
                 }
             `;
