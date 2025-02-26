@@ -42,7 +42,7 @@ onAuthStateChanged(auth, async (user) => {
                 <p><strong>Description:</strong> ${order.description || "No description"}</p>
                 <p><strong>Reward:</strong> ${order.reward || "No reward"}</p>
                 <p><strong>Created By:</strong> ${order.createdBy || "Unknown"}</p>
-                <p><strong>Sender's Phone:</strong> ${order.createdByPhone || "Not available"}</p>
+                
             `;
 
             acceptedOrdersContainer.appendChild(orderElement);
